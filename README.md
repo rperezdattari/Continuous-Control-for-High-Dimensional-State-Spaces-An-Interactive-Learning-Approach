@@ -38,28 +38,15 @@ Then, the files in the `gym` folder of this repository should be replaced/added 
 ```bash 
 python main.py --config-file <environment>
 ```
-The default configuration files are **car_racing** and **cartpole**.
+The default configuration files are **car_racing** and **duckie_racing**. The version of D-COACH (Enhanced/Basic) is selected in these configuration files.
 
 To be able to give feedback to the agent, the environment rendering window must be selected/clicked.
-
-To train the autoencoder for the high-dimensional state environments run (inside the folder `D-COACH`):
-
-```bash 
-python autoencoder.py
-```
-2. To generate a database for the CarRacing environment run the (replaced) file `car_racing.py` in the downloaded gym repository.
-
-To modify the dimension of the images in the generated database, this database must be in the folder `D-COACH` and from this folder run:
-
-```bash 
-python tools/transform_database_dim.py
-```
 
 ## Comments
 
 This code has been tested in `Ubuntu 16.04` and `python >= 3.5`.
 
-*TODO: add Gym-Duckietown config files*
+*TODO: add Duckie Racing config files*
 
 ## Troubleshooting
 
