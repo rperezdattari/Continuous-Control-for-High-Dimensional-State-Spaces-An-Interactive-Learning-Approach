@@ -1,14 +1,16 @@
-# Interactive Learning with Corrective Feedback for Policies based on Deep Neural Networks
-Code of the paper "Interactive Learning with Corrective Feedback for Policies based on Deep Neural Networks" to be presented at ISER 2018.
+# Continuous Control for High-Dimensional State Spaces: An Interactive Learning Approach
+Code of the paper "Continuous Control for High-Dimensional State Spaces: An Interactive Learning Approach" submitted to ICRA 2019.
+
+This repository is an extension of [Interactive Learning with Corrective Feedback for Policies based on Deep Neural Networks](https://github.com/rperezdattari/Interactive-Learning-with-Corrective-Feedback-for-Policies-based-on-Deep-Neural-Networks). The *enhanced* version of D-COACH was added in this project; the version presented in "Interactive Learning with Corrective Feedback for Policies based on Deep Neural Networks" is now called *basic*.
 
 This code is based on the following publication:
-1. [Interactive Learning with Corrective Feedback for Policies based on Deep Neural Networks (Preprint)](https://arxiv.org/abs/1810.00466) 
+1. Not available yet.
 
 **Authors:** Rodrigo Pérez-Dattari, Carlos Celemin, Javier Ruiz-del-Solar, Jens Kober.
 
 Link to paper video:
 
-[![Paper Video](https://img.youtube.com/vi/vcEtuRrRIe4/0.jpg)](https://www.youtube.com/watch?v=vcEtuRrRIe4)
+Not available yet.
 
 ## Installation
 
@@ -20,12 +22,7 @@ Then, the files in the `gym` folder of this repository should be replaced/added 
 
 2. **CarRacing:** the same CarRacing environment of Gym with some bug fixes and modifications in the main loop for database generation.
 
-To download and install some pretrained networks (CarRacing autoencoder, CarRacing simulated teacher, CartPole simulated teacher) and a CarRacing database for training the autoencoder run (inside the folder `D-COACH`):
-
-```bash 
-sh install_comp_files.sh
 ```
-
 ### Requirements
 * setuptools==38.5.1
 * numpy==1.13.3
