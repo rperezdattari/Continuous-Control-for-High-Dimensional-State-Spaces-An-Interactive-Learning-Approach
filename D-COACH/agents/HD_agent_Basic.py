@@ -56,7 +56,7 @@ class Agent(AgentBase):
                                                   params['loss_function_type'])
 
         variables = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, 'base')
-        self.train_step = tf.train.GradientDescentOptimizer(
+        self.train_policy = tf.train.GradientDescentOptimizer(
             learning_rate=params['learning_rate']).minimize(loss, var_list=variables)
 
         # Initialize tensorflow

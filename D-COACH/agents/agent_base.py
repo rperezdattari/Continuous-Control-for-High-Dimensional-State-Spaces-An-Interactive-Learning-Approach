@@ -32,7 +32,7 @@ class AgentBase:
         with tf.variable_scope('base'):
             self.y = None
             self.low_dim_input_shape = None
-        self.train_step = None
+        self.train_policy = None
         self.sess = None
         self.saver = None
 
@@ -60,7 +60,7 @@ class AgentBase:
 
         self.y_label = np.array(self.y_label).reshape(1, self.dim_a)
 
-        self.sess.run(self.train_step, feed_dict={'base/input:0': self.network_input,
+        self.sess.run(self.train_policy, feed_dict={'base/input:0': self.network_input,
                                                   'base/label:0': self.y_label})
 
     def batch_update(self, batch):
@@ -69,7 +69,7 @@ class AgentBase:
 
         self._batch_update_extra(state_batch, y_label_batch)
 
-        self.sess.run(self.train_step, feed_dict={'base/input:0': state_batch,
+        self.sess.run(self.train_policy, feed_dict={'base/input:0': state_batch,
                                                   'base/label:0': y_label_batch})
 
     def action(self, observation):

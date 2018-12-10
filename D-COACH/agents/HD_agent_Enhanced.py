@@ -49,13 +49,13 @@ class Agent(AgentBase):
             self.loss_ae,  latent_space, self.ae_output = autoencoder(ae_inputs)
 
             # Build fully connected layers
-            self.y, loss = fully_connected_layers(tf.contrib.layers.flatten(latent_space), dim_a,
-                                                  params['fc_layers_neurons'],
-                                                  params['loss_function_type'])
+            self.y, loss_policy = fully_connected_layers(tf.contrib.layers.flatten(latent_space), dim_a,
+                                                         params['fc_layers_neurons'],
+                                                         params['loss_function_type'])
 
         variables = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, 'base')
-        self.train_step = tf.train.GradientDescentOptimizer(
-            learning_rate=params['learning_rate']).minimize(loss, var_list=variables)
+        self.train_policy = tf.train.GradientDescentOptimizer(
+            learning_rate=params['learning_rate']).minimize(loss_policy, var_list=variables)
 
         self.train_ae = tf.train.AdamOptimizer(learning_rate=params['learning_rate']).minimize(self.loss_ae)
 
