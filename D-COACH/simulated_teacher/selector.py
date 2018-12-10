@@ -1,5 +1,4 @@
 from simulated_teacher.HD_teacher import Teacher as HD
-from simulated_teacher.LD_teacher import Teacher as LD
 
 
 #  Select teacher

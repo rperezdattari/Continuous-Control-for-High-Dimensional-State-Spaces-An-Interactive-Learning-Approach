@@ -1,7 +1,5 @@
-from agents.HD_agent_ISER import Agent as HD_Basic
-from agents.HD_agent_ICRA import Agent as HD_Enhanced
-from agents.LD_agent import Agent as LD
-from agents.LD_lstm_agent import Agent as  LD_lstm
+from agents.HD_agent_Basic import Agent as HD_Basic
+from agents.HD_agent_Enhanced import Agent as HD_Enhanced
 
 
 #  Select agent
