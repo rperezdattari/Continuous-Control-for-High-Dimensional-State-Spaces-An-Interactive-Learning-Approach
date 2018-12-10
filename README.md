@@ -22,7 +22,6 @@ Then, the files in the `gym` folder of this repository should be replaced/added 
 
 2. **CarRacing:** the same CarRacing environment of Gym with some bug fixes and modifications in the main loop for database generation.
 
-```
 ### Requirements
 * setuptools==38.5.1
 * numpy==1.13.3
