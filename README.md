@@ -60,7 +60,7 @@ python tools/transform_database_dim.py
 
 This code has been tested in `Ubuntu 16.04` and `python >= 3.5`.
 
-<span style="color:red"> TODO: add Gym-Duckietown config files </span>
+*TODO: add Gym-Duckietown config files*
 
 ## Troubleshooting
 
