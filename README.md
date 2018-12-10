@@ -58,11 +58,9 @@ python tools/transform_database_dim.py
 
 ## Comments
 
-The D-COACH algorithm is designed to work with continuous-action problems. Given that the Cartpole environment of gym was designed to work with discrete action spaces, a modified continuous version of this environment is used.
-
 This code has been tested in `Ubuntu 16.04` and `python >= 3.5`.
 
-Tests with the CartPole environment using the classic COACH algorithm can be done using the following repository: [COACH](https://github.com/rperezdattari/COACH-gym)
+<span style="color:red"> TODO: add Gym-Duckietown config files </span>
 
 ## Troubleshooting
 
