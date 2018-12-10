@@ -46,6 +46,8 @@ To be able to give feedback to the agent, the environment rendering window must 
 
 This code has been tested in `Ubuntu 16.04` and `python >= 3.5`.
 
+*TODO: Ehanced HD teacher*
+
 ## Troubleshooting
 
 If you run into problems of any kind, don't hesitate to [open an issue](https://github.com/rperezdattari/Continuous-Control-for-High-Dimensional-State-Spaces-An-Interactive-Learning-Approach/issues) on this repository. It is quite possible that you have run into some bug we are not aware of.
