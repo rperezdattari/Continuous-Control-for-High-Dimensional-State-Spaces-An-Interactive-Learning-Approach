@@ -11,10 +11,5 @@ def teacher_selector(network, version, dim_a, action_lower_limits, action_upper_
                   loc=loc, error_prob=error_prob, teacher_parameters=teacher_parameters,
                   image_size=config_teacher.getint('image_side_length'),
                   resize_observation=config_general.getboolean('resize_observation'))
-
-    elif network == 'LD':
-        return LD(dim_a=dim_a, action_lower_limits=action_lower_limits, action_upper_limits=action_upper_limits,
-                  loc=loc, error_prob=error_prob, teacher_parameters=teacher_parameters,
-                  dim_state=config_teacher.getint('dim_state'))
     else:
         raise NameError('Not valid network.')

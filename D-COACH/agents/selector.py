@@ -30,10 +30,5 @@ def agent_selector(network, version, train_ae, load_policy, learning_rate, dim_a
                                ae_training_threshold=float(config_graph['ae_training_threshold']),
                                ae_evaluation_frequency=config_graph.getint('ae_evaluation_frequency'))
 
-    elif network == 'LD':
-        return LD(load_policy=load_policy, learning_rate=learning_rate, dim_a=dim_a,
-                  fc_layers_neurons=fc_layers_neurons, loss_function_type=loss_function_type, policy_loc=policy_loc,
-                  action_upper_limits=action_upper_limits, action_lower_limits=action_lower_limits, e=e,
-                  dim_state=config_graph.getint('dim_state'))
     else:
         raise NameError('Not valid network.')
