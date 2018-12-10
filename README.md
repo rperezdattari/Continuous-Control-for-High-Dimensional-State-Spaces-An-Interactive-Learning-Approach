@@ -18,9 +18,9 @@ To use the code, it is necessary to first install the gym toolkit (release v0.9.
 
 Then, the files in the `gym` folder of this repository should be replaced/added in the installed gym folder on your PC. There are modifications of two gym environments:
 
-1. **Continuous-CartPole:** a continuous-action version of the Gym CartPole environment.
+1. **Duckie Racing:** Duckietown car simulation available at https://github.com/duckietown/gym-duckietown. *TODO: add Duckie Racing config files and specifications*
 
-2. **CarRacing:** the same CarRacing environment of Gym with some bug fixes and modifications in the main loop for database generation.
+2. **Car Racing:** the same CarRacing environment of Gym with some bug fixes and modifications in the main loop for database generation.
 
 ### Requirements
 * setuptools==38.5.1
@@ -46,9 +46,7 @@ To be able to give feedback to the agent, the environment rendering window must 
 
 This code has been tested in `Ubuntu 16.04` and `python >= 3.5`.
 
-*TODO: add Duckie Racing config files*
-
 ## Troubleshooting
 
-If you run into problems of any kind, don't hesitate to [open an issue](https://github.com/rperezdattari/Interactive-Learning-with-Corrective-Feedback-for-Policies-based-on-Deep-Neural-Networks/issues) on this repository. It is quite possible that you have run into some bug we are not aware of.
+If you run into problems of any kind, don't hesitate to [open an issue](https://github.com/rperezdattari/Continuous-Control-for-High-Dimensional-State-Spaces-An-Interactive-Learning-Approach/issues) on this repository. It is quite possible that you have run into some bug we are not aware of.
 
