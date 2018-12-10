@@ -15,6 +15,8 @@ class Agent(AgentBase):
                  action_lower_limits='-1,-1', e='1', show_ae_output=True, show_state=True, resize_observation=True,
                  ae_training_threshold=0.0011, ae_evaluation_frequency=40):
 
+        self.image_size = image_size
+
         super(Agent, self).__init__(dim_a=dim_a, policy_loc=policy_loc, action_upper_limits=action_upper_limits,
                                     action_lower_limits=action_lower_limits, e=e, load_policy=load_policy,
                                     loss_function_type=loss_function_type, learning_rate=learning_rate,
@@ -22,7 +24,6 @@ class Agent(AgentBase):
 
         # High-dimensional state initialization
         self.resize_observation = resize_observation
-        self.image_size = image_size
         self.show_state = show_state
         self.show_ae_output = show_ae_output
 
@@ -45,7 +46,7 @@ class Agent(AgentBase):
         # Initialize graph
         with tf.variable_scope('base'):
             # Build autoencoder
-            ae_inputs = tf.placeholder(tf.float32, (None, 64, 64, 1), name='input')
+            ae_inputs = tf.placeholder(tf.float32, (None, self.image_size, self.image_size, 1), name='input')
             self.loss_ae,  latent_space, self.ae_output = autoencoder(ae_inputs)
 
             # Build fully connected layers
@@ -93,6 +94,7 @@ class Agent(AgentBase):
             else:
                 self.ae_training = True
 
+            # If flag changed, print
             if last_ae_training_state is not self.ae_training:
                 print('\nTraining autoencoder:', self.ae_training, '\n')
 
