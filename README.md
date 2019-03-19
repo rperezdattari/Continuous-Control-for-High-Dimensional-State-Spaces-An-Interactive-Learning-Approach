@@ -4,13 +4,12 @@ Code of the paper "Continuous Control for High-Dimensional State Spaces: An Inte
 This repository is an extension of [Interactive Learning with Corrective Feedback for Policies based on Deep Neural Networks](https://github.com/rperezdattari/Interactive-Learning-with-Corrective-Feedback-for-Policies-based-on-Deep-Neural-Networks). The *enhanced* version of D-COACH was added in this project; the version presented in "Interactive Learning with Corrective Feedback for Policies based on Deep Neural Networks" is now called *basic*.
 
 This code is based on the following publication:
-1. Not available yet.
+1. [Continuous Control for High-Dimensional State Spaces: An Interactive Learning Approach](http://www.jenskober.de/publications/PerezDattari2019ICRA.pdf)
 
 **Authors:** Rodrigo Pérez-Dattari, Carlos Celemin, Javier Ruiz-del-Solar, Jens Kober.
 
-Link to paper video:
+[Link to paper video](https://youtu.be/i4f1D4CH26E)
 
-Not available yet.
 
 ## Installation
 
